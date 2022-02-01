@@ -1,0 +1,22 @@
+.icon {
+  cursor: default;
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Material Icons', fantasy;
+  font-feature-settings: 'liga';
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &--outlined {
+    font-family: 'Material Icons Outlined', fantasy;
+  }
+}

@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+.next
+.pnpm-store
+.vscode
+cypress/**/examples
+cypress/videos/*
+debug.log
+dist
+node_modules
+out/*
+wordpress
+package-lock.json
+stats.json
