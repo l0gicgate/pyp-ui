@@ -23,6 +23,13 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     ],
+    'react/jsx-sort-props': [
+      'error',
+      {
+        ignoreCase: true,
+        reservedFirst: false,
+      },
+    ],
     'react/no-array-index-key': 0,
     'react/prefer-stateless-function': 0,
   },
