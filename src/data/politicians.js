@@ -2320,7 +2320,7 @@ export const politicians = [
     startDate: '2021-09-20 12:00:00 AM',
   },
   {
-    firstName: 'Michael',
+    firstName: 'Michael D.',
     lastName: 'Chong',
     constituency: 'Wellington—Halton Hills',
     province: 'Ontario',
