@@ -24,7 +24,7 @@ export const Politicians = forwardRef(({ className }, ref) => {
   return (
     <section className={classNames} ref={ref}>
       <div className="politicians__left">
-        <h2>Select Your Province</h2>
+        <h2>Select a Province</h2>
         <CanadaMap
           className="select-your-province__map"
           customize={customMapStyle}

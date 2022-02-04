@@ -5,12 +5,58 @@
   padding: 30px;
 
   &__left {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
     img {
-      height: 100px;
+      height: 180px;
+    }
+
+    .left__party-label {
+      bottom: 0;
+      left: 0;
+      position: absolute;
     }
   }
 
   &__right {
-    padding-left: 15px;
+    padding: 15px 30px 15px;
+
+    .right__meta {
+      margin-bottom: 15px;
+
+      .meta__name {
+        margin-bottom: 4px;
+      }
+
+      .meta__constituency {
+        font-size: 12px;
+
+        .constituency__separator {
+          margin: 0 4px;
+        }
+      }
+    }
+
+    .right__contact {
+      .contact__item {
+        align-items: center;
+        display: flex;
+        margin-bottom: 8px;
+
+        .item__icon {
+          margin-right: 8px;
+        }
+
+        .item__img-icon {
+          margin-right: 8px;
+        }
+
+        .item__label {
+          font-size: 12px;
+        }
+      }
+    }
   }
 }

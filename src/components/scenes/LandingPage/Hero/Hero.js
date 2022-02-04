@@ -14,8 +14,8 @@ export const Hero = ({ className, onClick }) => {
       <div className="hero__inner">
         <div className="inner__left">
           <h1>
-            The people who are crazy enough to think they can change the world
-            are the ones who do.
+            Politicians work for us. It is our duty as citizen to keep them
+            accountable.
           </h1>
           <button onClick={onClick}>Take Action Now!</button>
         </div>

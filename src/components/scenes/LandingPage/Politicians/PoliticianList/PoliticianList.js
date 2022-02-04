@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { PoliticianListItem } from './PoliticianListItem';
 import {
-  politicians as initialPoliticians,
+  orderedPoliticians,
   politiciansByProvinceCode,
 } from '../../../../../data/politicians';
 import './PoliticianList.scss';
@@ -12,7 +12,7 @@ export const PoliticianList = ({ className, province: initialProvince }) => {
   const classNames = classnames('politician-list', className);
 
   const [province, setProvince] = useState(initialProvince);
-  const [politicians, setPoliticians] = useState(initialPoliticians);
+  const [politicians, setPoliticians] = useState(orderedPoliticians());
 
   useEffect(() => {
     setProvince(initialProvince);
@@ -22,19 +22,24 @@ export const PoliticianList = ({ className, province: initialProvince }) => {
     const nextPoliticians =
       province !== null
         ? politiciansByProvinceCode(province)
-        : initialPoliticians;
+        : orderedPoliticians();
     setPoliticians(nextPoliticians);
   }, [province]);
 
   return (
     <div className={classNames}>
-      {politicians.map(({ firstName, lastName }, i) => (
-        <PoliticianListItem
-          firstName={firstName}
-          key={`politician-${i}`}
-          lastName={lastName}
-        />
-      ))}
+      {politicians.map(
+        ({ affiliation, constituency, firstName, lastName, province }, i) => (
+          <PoliticianListItem
+            affiliation={affiliation}
+            constituency={constituency}
+            firstName={firstName}
+            key={`politician-${i}`}
+            lastName={lastName}
+            province={province}
+          />
+        )
+      )}
     </div>
   );
 };

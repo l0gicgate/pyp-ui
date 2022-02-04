@@ -30,6 +30,24 @@ export const provincesByCode = {
   YT: 'Yukon',
 };
 
+export const seats = {
+  'Bloc Québécois': 32,
+  Conservative: 119,
+  'Green Party': 2,
+  Independent: 1,
+  Liberal: 159,
+  NDP: 25,
+};
+
+export const colorsByParty = {
+  'Bloc Québécois': '#0088CE',
+  Conservative: '#002395',
+  'Green Party': '#427730',
+  Independent: 'silver',
+  Liberal: '#ed2e38',
+  NDP: '#FF5800',
+};
+
 export const politicians = [
   {
     firstName: 'Ziad',
@@ -42,7 +60,7 @@ export const politicians = [
   {
     firstName: 'Scott',
     lastName: 'Aitchison',
-    constituency: 'Parry Sound—Muskoka',
+    constituency: 'Parry Sound-Muskoka',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -50,7 +68,7 @@ export const politicians = [
   {
     firstName: 'Dan',
     lastName: 'Albas',
-    constituency: 'Central Okanagan—Similkameen—Nicola',
+    constituency: 'Central Okanagan-Similkameen-Nicola',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -58,7 +76,7 @@ export const politicians = [
   {
     firstName: 'John',
     lastName: 'Aldag',
-    constituency: 'Cloverdale—Langley City',
+    constituency: 'Cloverdale-Langley City',
     province: 'British Columbia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -82,7 +100,7 @@ export const politicians = [
   {
     firstName: 'Gary',
     lastName: 'Anandasangaree',
-    constituency: 'Scarborough—Rouge Park',
+    constituency: 'Scarborough-Rouge Park',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -90,7 +108,7 @@ export const politicians = [
   {
     firstName: 'Charlie',
     lastName: 'Angus',
-    constituency: 'Timmins—James Bay',
+    constituency: 'Timmins-James Bay',
     province: 'Ontario',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -98,7 +116,7 @@ export const politicians = [
   {
     firstName: 'Mel',
     lastName: 'Arnold',
-    constituency: 'North Okanagan—Shuswap',
+    constituency: 'North Okanagan-Shuswap',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -106,7 +124,7 @@ export const politicians = [
   {
     firstName: 'René',
     lastName: 'Arseneault',
-    constituency: 'Madawaska—Restigouche',
+    constituency: 'Madawaska-Restigouche',
     province: 'New Brunswick',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -122,7 +140,7 @@ export const politicians = [
   {
     firstName: 'Niki',
     lastName: 'Ashton',
-    constituency: 'Churchill—Keewatinook Aski',
+    constituency: 'Churchill-Keewatinook Aski',
     province: 'Manitoba',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -138,7 +156,7 @@ export const politicians = [
   {
     firstName: 'Taylor',
     lastName: 'Bachrach',
-    constituency: 'Skeena—Bulkley Valley',
+    constituency: 'Skeena-Bulkley Valley',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -154,7 +172,7 @@ export const politicians = [
   {
     firstName: 'Parm',
     lastName: 'Bains',
-    constituency: 'Steveston—Richmond East',
+    constituency: 'Steveston-Richmond East',
     province: 'British Columbia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -186,7 +204,7 @@ export const politicians = [
   {
     firstName: 'Michael',
     lastName: 'Barrett',
-    constituency: 'Leeds—Grenville—Thousand Islands and Rideau Lakes',
+    constituency: 'Leeds-Grenville-Thousand Islands and Rideau Lakes',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -194,7 +212,7 @@ export const politicians = [
   {
     firstName: 'Lisa Marie',
     lastName: 'Barron',
-    constituency: 'Nanaimo—Ladysmith',
+    constituency: 'Nanaimo-Ladysmith',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -202,7 +220,7 @@ export const politicians = [
   {
     firstName: 'Xavier',
     lastName: 'Barsalou-Duval',
-    constituency: 'Pierre-Boucher—Les Patriotes—Verchères',
+    constituency: 'Pierre-Boucher-Les Patriotes-Verchères',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -210,7 +228,7 @@ export const politicians = [
   {
     firstName: 'Jaime',
     lastName: 'Battiste',
-    constituency: 'Sydney—Victoria',
+    constituency: 'Sydney-Victoria',
     province: 'Nova Scotia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -226,7 +244,7 @@ export const politicians = [
   {
     firstName: 'Terry',
     lastName: 'Beech',
-    constituency: 'Burnaby North—Seymour',
+    constituency: 'Burnaby North-Seymour',
     province: 'British Columbia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -258,7 +276,7 @@ export const politicians = [
   {
     firstName: 'Luc',
     lastName: 'Berthold',
-    constituency: "Mégantic—L'Érable",
+    constituency: "Mégantic-L'Érable",
     province: 'Quebec',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -266,7 +284,7 @@ export const politicians = [
   {
     firstName: 'Sylvie',
     lastName: 'Bérubé',
-    constituency: 'Abitibi—Baie-James—Nunavik—Eeyou',
+    constituency: 'Abitibi-Baie-James-Nunavik-Eeyou',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -274,7 +292,7 @@ export const politicians = [
   {
     firstName: 'James',
     lastName: 'Bezan',
-    constituency: 'Selkirk—Interlake—Eastman',
+    constituency: 'Selkirk-Interlake-Eastman',
     province: 'Manitoba',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -290,7 +308,7 @@ export const politicians = [
   {
     firstName: 'Daniel',
     lastName: 'Blaikie',
-    constituency: 'Elmwood—Transcona',
+    constituency: 'Elmwood-Transcona',
     province: 'Manitoba',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -298,7 +316,7 @@ export const politicians = [
   {
     firstName: 'Yves-François',
     lastName: 'Blanchet',
-    constituency: 'Beloeil—Chambly',
+    constituency: 'Beloeil-Chambly',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -306,7 +324,7 @@ export const politicians = [
   {
     firstName: 'Maxime',
     lastName: 'Blanchette-Joncas',
-    constituency: 'Rimouski-Neigette—Témiscouata—Les Basques',
+    constituency: 'Rimouski-Neigette-Témiscouata-Les Basques',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -314,7 +332,7 @@ export const politicians = [
   {
     firstName: 'Rachel',
     lastName: 'Blaney',
-    constituency: 'North Island—Powell River',
+    constituency: 'North Island-Powell River',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -322,7 +340,7 @@ export const politicians = [
   {
     firstName: 'Kelly',
     lastName: 'Block',
-    constituency: 'Carlton Trail—Eagle Creek',
+    constituency: 'Carlton Trail-Eagle Creek',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -330,7 +348,7 @@ export const politicians = [
   {
     firstName: 'Kody',
     lastName: 'Blois',
-    constituency: 'Kings—Hants',
+    constituency: 'Kings-Hants',
     province: 'Nova Scotia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -338,7 +356,7 @@ export const politicians = [
   {
     firstName: 'Alexandre',
     lastName: 'Boulerice',
-    constituency: 'Rosemont—La Petite-Patrie',
+    constituency: 'Rosemont-La Petite-Patrie',
     province: 'Quebec',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -346,7 +364,7 @@ export const politicians = [
   {
     firstName: 'Valerie',
     lastName: 'Bradford',
-    constituency: 'Kitchener South—Hespeler',
+    constituency: 'Kitchener South-Hespeler',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -354,7 +372,7 @@ export const politicians = [
   {
     firstName: 'Richard',
     lastName: 'Bragdon',
-    constituency: 'Tobique—Mactaquac',
+    constituency: 'Tobique-Mactaquac',
     province: 'New Brunswick',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -362,7 +380,7 @@ export const politicians = [
   {
     firstName: 'John',
     lastName: 'Brassard',
-    constituency: 'Barrie—Innisfil',
+    constituency: 'Barrie-Innisfil',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -378,7 +396,7 @@ export const politicians = [
   {
     firstName: 'Larry',
     lastName: 'Brock',
-    constituency: 'Brantford—Brant',
+    constituency: 'Brantford-Brant',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -394,7 +412,7 @@ export const politicians = [
   {
     firstName: 'Blaine',
     lastName: 'Calkins',
-    constituency: 'Red Deer—Lacombe',
+    constituency: 'Red Deer-Lacombe',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -402,7 +420,7 @@ export const politicians = [
   {
     firstName: 'Richard',
     lastName: 'Cannings',
-    constituency: 'South Okanagan—West Kootenay',
+    constituency: 'South Okanagan-West Kootenay',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -410,7 +428,7 @@ export const politicians = [
   {
     firstName: 'Frank',
     lastName: 'Caputo',
-    constituency: 'Kamloops—Thompson—Cariboo',
+    constituency: 'Kamloops-Thompson-Cariboo',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -482,7 +500,7 @@ export const politicians = [
   {
     firstName: 'Paul',
     lastName: 'Chiang',
-    constituency: 'Markham—Unionville',
+    constituency: 'Markham-Unionville',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -490,7 +508,7 @@ export const politicians = [
   {
     firstName: 'Chad',
     lastName: 'Collins',
-    constituency: 'Hamilton East—Stoney Creek',
+    constituency: 'Hamilton East-Stoney Creek',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -506,7 +524,7 @@ export const politicians = [
   {
     firstName: 'Michael',
     lastName: 'Cooper',
-    constituency: 'St. Albert—Edmonton',
+    constituency: 'St. Albert-Edmonton',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -514,7 +532,7 @@ export const politicians = [
   {
     firstName: 'Serge',
     lastName: 'Cormier',
-    constituency: 'Acadie—Bathurst',
+    constituency: 'Acadie-Bathurst',
     province: 'New Brunswick',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -530,7 +548,7 @@ export const politicians = [
   {
     firstName: 'Julie',
     lastName: 'Dabrusin',
-    constituency: 'Toronto—Danforth',
+    constituency: 'Toronto-Danforth',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -538,7 +556,7 @@ export const politicians = [
   {
     firstName: 'Marc',
     lastName: 'Dalton',
-    constituency: 'Pitt Meadows—Maple Ridge',
+    constituency: 'Pitt Meadows-Maple Ridge',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -546,7 +564,7 @@ export const politicians = [
   {
     firstName: 'Pam',
     lastName: 'Damoff',
-    constituency: 'Oakville North—Burlington',
+    constituency: 'Oakville North-Burlington',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -554,7 +572,7 @@ export const politicians = [
   {
     firstName: 'Raquel',
     lastName: 'Dancho',
-    constituency: 'Kildonan—St. Paul',
+    constituency: 'Kildonan-St. Paul',
     province: 'Manitoba',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -562,7 +580,7 @@ export const politicians = [
   {
     firstName: 'Scot',
     lastName: 'Davidson',
-    constituency: 'York—Simcoe',
+    constituency: 'York-Simcoe',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -578,7 +596,7 @@ export const politicians = [
   {
     firstName: 'Claude',
     lastName: 'DeBellefeuille',
-    constituency: 'Salaberry—Suroît',
+    constituency: 'Salaberry-Suroît',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -602,7 +620,7 @@ export const politicians = [
   {
     firstName: 'Caroline',
     lastName: 'Desbiens',
-    constituency: "Beauport—Côte-de-Beaupré—Île d'Orléans—Charlevoix",
+    constituency: "Beauport-Côte-de-Beaupré-Île d'Orléans-Charlevoix",
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -626,7 +644,7 @@ export const politicians = [
   {
     firstName: 'Sukh',
     lastName: 'Dhaliwal',
-    constituency: 'Surrey—Newton',
+    constituency: 'Surrey-Newton',
     province: 'British Columbia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -634,7 +652,7 @@ export const politicians = [
   {
     firstName: 'Anju',
     lastName: 'Dhillon',
-    constituency: 'Dorval—Lachine—LaSalle',
+    constituency: 'Dorval-Lachine-LaSalle',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -650,7 +668,7 @@ export const politicians = [
   {
     firstName: 'Todd',
     lastName: 'Doherty',
-    constituency: 'Cariboo—Prince George',
+    constituency: 'Cariboo-Prince George',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -666,7 +684,7 @@ export const politicians = [
   {
     firstName: 'Terry',
     lastName: 'Dowdall',
-    constituency: 'Simcoe—Grey',
+    constituency: 'Simcoe-Grey',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -674,7 +692,7 @@ export const politicians = [
   {
     firstName: 'Earl',
     lastName: 'Dreeshen',
-    constituency: 'Red Deer—Mountain View',
+    constituency: 'Red Deer-Mountain View',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -682,7 +700,7 @@ export const politicians = [
   {
     firstName: 'Francis',
     lastName: 'Drouin',
-    constituency: 'Glengarry—Prescott—Russell',
+    constituency: 'Glengarry-Prescott-Russell',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -706,7 +724,7 @@ export const politicians = [
   {
     firstName: 'Eric',
     lastName: 'Duncan',
-    constituency: 'Stormont—Dundas—South Glengarry',
+    constituency: 'Stormont-Dundas-South Glengarry',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -730,7 +748,7 @@ export const politicians = [
   {
     firstName: 'Fayçal',
     lastName: 'El-Khoury',
-    constituency: 'Laval—Les Îles',
+    constituency: 'Laval-Les Îles',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -738,7 +756,7 @@ export const politicians = [
   {
     firstName: 'Stephen',
     lastName: 'Ellis',
-    constituency: 'Cumberland—Colchester',
+    constituency: 'Cumberland-Colchester',
     province: 'Nova Scotia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -746,7 +764,7 @@ export const politicians = [
   {
     firstName: 'Dave',
     lastName: 'Epp',
-    constituency: 'Chatham-Kent—Leamington',
+    constituency: 'Chatham-Kent-Leamington',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -754,7 +772,7 @@ export const politicians = [
   {
     firstName: 'Nathaniel',
     lastName: 'Erskine-Smith',
-    constituency: 'Beaches—East York',
+    constituency: 'Beaches-East York',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -762,7 +780,7 @@ export const politicians = [
   {
     firstName: 'Rosemarie',
     lastName: 'Falk',
-    constituency: 'Battlefords—Lloydminster',
+    constituency: 'Battlefords-Lloydminster',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -778,7 +796,7 @@ export const politicians = [
   {
     firstName: 'Michelle',
     lastName: 'Ferreri',
-    constituency: 'Peterborough—Kawartha',
+    constituency: 'Peterborough-Kawartha',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -794,7 +812,7 @@ export const politicians = [
   {
     firstName: 'Darren',
     lastName: 'Fisher',
-    constituency: 'Dartmouth—Cole Harbour',
+    constituency: 'Dartmouth-Cole Harbour',
     province: 'Nova Scotia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -802,7 +820,7 @@ export const politicians = [
   {
     firstName: 'Peter',
     lastName: 'Fonseca',
-    constituency: 'Mississauga East—Cooksville',
+    constituency: 'Mississauga East-Cooksville',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -826,7 +844,7 @@ export const politicians = [
   {
     firstName: 'Iqwinder',
     lastName: 'Gaheer',
-    constituency: 'Mississauga—Malton',
+    constituency: 'Mississauga-Malton',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -834,7 +852,7 @@ export const politicians = [
   {
     firstName: 'Cheryl',
     lastName: 'Gallant',
-    constituency: 'Renfrew—Nipissing—Pembroke',
+    constituency: 'Renfrew-Nipissing-Pembroke',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -850,7 +868,7 @@ export const politicians = [
   {
     firstName: 'Randall',
     lastName: 'Garrison',
-    constituency: 'Esquimalt—Saanich—Sooke',
+    constituency: 'Esquimalt-Saanich-Sooke',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -858,7 +876,7 @@ export const politicians = [
   {
     firstName: 'Marie-Hélène',
     lastName: 'Gaudreau',
-    constituency: 'Laurentides—Labelle',
+    constituency: 'Laurentides-Labelle',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -874,7 +892,7 @@ export const politicians = [
   {
     firstName: 'Bernard',
     lastName: 'Généreux',
-    constituency: "Montmagny—L'Islet—Kamouraska—Rivière-du-Loup",
+    constituency: "Montmagny-L'Islet-Kamouraska-Rivière-du-Loup",
     province: 'Quebec',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -882,7 +900,7 @@ export const politicians = [
   {
     firstName: 'Garnett',
     lastName: 'Genuis',
-    constituency: 'Sherwood Park—Fort Saskatchewan',
+    constituency: 'Sherwood Park-Fort Saskatchewan',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -906,7 +924,7 @@ export const politicians = [
   {
     firstName: 'Marilyn',
     lastName: 'Gladu',
-    constituency: 'Sarnia—Lambton',
+    constituency: 'Sarnia-Lambton',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -914,7 +932,7 @@ export const politicians = [
   {
     firstName: 'Joël',
     lastName: 'Godin',
-    constituency: 'Portneuf—Jacques-Cartier',
+    constituency: 'Portneuf-Jacques-Cartier',
     province: 'Quebec',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -922,7 +940,7 @@ export const politicians = [
   {
     firstName: 'Laila',
     lastName: 'Goodridge',
-    constituency: 'Fort McMurray—Cold Lake',
+    constituency: 'Fort McMurray-Cold Lake',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -930,7 +948,7 @@ export const politicians = [
   {
     firstName: 'Jacques',
     lastName: 'Gourde',
-    constituency: 'Lévis—Lotbinière',
+    constituency: 'Lévis-Lotbinière',
     province: 'Quebec',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -938,7 +956,7 @@ export const politicians = [
   {
     firstName: 'Tracy',
     lastName: 'Gray',
-    constituency: 'Kelowna—Lake Country',
+    constituency: 'Kelowna-Lake Country',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -970,7 +988,7 @@ export const politicians = [
   {
     firstName: 'Ken',
     lastName: 'Hardie',
-    constituency: 'Fleetwood—Port Kells',
+    constituency: 'Fleetwood-Port Kells',
     province: 'British Columbia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1002,7 +1020,7 @@ export const politicians = [
   {
     firstName: 'Carol',
     lastName: 'Hughes',
-    constituency: 'Algoma—Manitoulin—Kapuskasing',
+    constituency: 'Algoma-Manitoulin-Kapuskasing',
     province: 'Ontario',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1034,7 +1052,7 @@ export const politicians = [
   {
     firstName: 'Gord',
     lastName: 'Johns',
-    constituency: 'Courtenay—Alberni',
+    constituency: 'Courtenay-Alberni',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1058,7 +1076,7 @@ export const politicians = [
   {
     firstName: 'Peter',
     lastName: 'Julian',
-    constituency: 'New Westminster—Burnaby',
+    constituency: 'New Westminster-Burnaby',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1074,7 +1092,7 @@ export const politicians = [
   {
     firstName: 'Mike',
     lastName: 'Kelloway',
-    constituency: 'Cape Breton—Canso',
+    constituency: 'Cape Breton-Canso',
     province: 'Nova Scotia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1090,7 +1108,7 @@ export const politicians = [
   {
     firstName: 'Iqra',
     lastName: 'Khalid',
-    constituency: 'Mississauga—Erin Mills',
+    constituency: 'Mississauga-Erin Mills',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1098,7 +1116,7 @@ export const politicians = [
   {
     firstName: 'Robert',
     lastName: 'Kitchen',
-    constituency: 'Souris—Moose Mountain',
+    constituency: 'Souris-Moose Mountain',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1122,7 +1140,7 @@ export const politicians = [
   {
     firstName: 'Michael',
     lastName: 'Kram',
-    constituency: 'Regina—Wascana',
+    constituency: 'Regina-Wascana',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1130,7 +1148,7 @@ export const politicians = [
   {
     firstName: 'Shelby',
     lastName: 'Kramp-Neuman',
-    constituency: 'Hastings—Lennox and Addington',
+    constituency: 'Hastings-Lennox and Addington',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1138,7 +1156,7 @@ export const politicians = [
   {
     firstName: 'Damien',
     lastName: 'Kurek',
-    constituency: 'Battle River—Crowfoot',
+    constituency: 'Battle River-Crowfoot',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1154,7 +1172,7 @@ export const politicians = [
   {
     firstName: 'Irek',
     lastName: 'Kusmierczyk',
-    constituency: 'Windsor—Tecumseh',
+    constituency: 'Windsor-Tecumseh',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1218,7 +1236,7 @@ export const politicians = [
   {
     firstName: 'Patricia',
     lastName: 'Lattanzio',
-    constituency: 'Saint-Léonard—Saint-Michel',
+    constituency: 'Saint-Léonard-Saint-Michel',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1226,7 +1244,7 @@ export const politicians = [
   {
     firstName: 'Stéphane',
     lastName: 'Lauzon',
-    constituency: 'Argenteuil—La Petite-Nation',
+    constituency: 'Argenteuil-La Petite-Nation',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1234,7 +1252,7 @@ export const politicians = [
   {
     firstName: 'Philip',
     lastName: 'Lawrence',
-    constituency: 'Northumberland—Peterborough South',
+    constituency: 'Northumberland-Peterborough South',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1250,7 +1268,7 @@ export const politicians = [
   {
     firstName: 'Sébastien',
     lastName: 'Lemire',
-    constituency: 'Abitibi—Témiscamingue',
+    constituency: 'Abitibi-Témiscamingue',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1266,7 +1284,7 @@ export const politicians = [
   {
     firstName: 'Leslyn',
     lastName: 'Lewis',
-    constituency: 'Haldimand—Norfolk',
+    constituency: 'Haldimand-Norfolk',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1290,7 +1308,7 @@ export const politicians = [
   {
     firstName: 'Dane',
     lastName: 'Lloyd',
-    constituency: 'Sturgeon River—Parkland',
+    constituency: 'Sturgeon River-Parkland',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1298,7 +1316,7 @@ export const politicians = [
   {
     firstName: 'Ben',
     lastName: 'Lobb',
-    constituency: 'Huron—Bruce',
+    constituency: 'Huron-Bruce',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1306,7 +1324,7 @@ export const politicians = [
   {
     firstName: 'Wayne',
     lastName: 'Long',
-    constituency: 'Saint John—Rothesay',
+    constituency: 'Saint John-Rothesay',
     province: 'New Brunswick',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1322,7 +1340,7 @@ export const politicians = [
   {
     firstName: 'Tim',
     lastName: 'Louis',
-    constituency: 'Kitchener—Conestoga',
+    constituency: 'Kitchener-Conestoga',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1338,7 +1356,7 @@ export const politicians = [
   {
     firstName: 'Alistair',
     lastName: 'MacGregor',
-    constituency: 'Cowichan—Malahat—Langford',
+    constituency: 'Cowichan-Malahat-Langford',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1354,7 +1372,7 @@ export const politicians = [
   {
     firstName: 'Larry',
     lastName: 'Maguire',
-    constituency: 'Brandon—Souris',
+    constituency: 'Brandon-Souris',
     province: 'Manitoba',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1362,7 +1380,7 @@ export const politicians = [
   {
     firstName: 'James',
     lastName: 'Maloney',
-    constituency: 'Etobicoke—Lakeshore',
+    constituency: 'Etobicoke-Lakeshore',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1370,7 +1388,7 @@ export const politicians = [
   {
     firstName: 'Richard',
     lastName: 'Martel',
-    constituency: 'Chicoutimi—Le Fjord',
+    constituency: 'Chicoutimi-Le Fjord',
     province: 'Quebec',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1394,7 +1412,7 @@ export const politicians = [
   {
     firstName: 'Lindsay',
     lastName: 'Mathyssen',
-    constituency: 'London—Fanshawe',
+    constituency: 'London-Fanshawe',
     province: 'Ontario',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1410,7 +1428,7 @@ export const politicians = [
   {
     firstName: 'Elizabeth',
     lastName: 'May',
-    constituency: 'Saanich—Gulf Islands',
+    constituency: 'Saanich-Gulf Islands',
     province: 'British Columbia',
     affiliation: 'Green Party',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1418,7 +1436,7 @@ export const politicians = [
   {
     firstName: 'Dan',
     lastName: 'Mazier',
-    constituency: 'Dauphin—Swan River—Neepawa',
+    constituency: 'Dauphin-Swan River-Neepawa',
     province: 'Manitoba',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1442,7 +1460,7 @@ export const politicians = [
   {
     firstName: 'Ron',
     lastName: 'McKinnon',
-    constituency: 'Coquitlam—Port Coquitlam',
+    constituency: 'Coquitlam-Port Coquitlam',
     province: 'British Columbia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1482,7 +1500,7 @@ export const politicians = [
   {
     firstName: 'Alexandra',
     lastName: 'Mendès',
-    constituency: 'Brossard—Saint-Lambert',
+    constituency: 'Brossard-Saint-Lambert',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1498,7 +1516,7 @@ export const politicians = [
   {
     firstName: 'Kristina',
     lastName: 'Michaud',
-    constituency: 'Avignon—La Mitis—Matane—Matapédia',
+    constituency: 'Avignon-La Mitis-Matane-Matapédia',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1506,7 +1524,7 @@ export const politicians = [
   {
     firstName: 'Marty',
     lastName: 'Morantz',
-    constituency: 'Charleswood—St. James—Assiniboia—Headingley',
+    constituency: 'Charleswood-St. James-Assiniboia-Headingley',
     province: 'Manitoba',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1522,7 +1540,7 @@ export const politicians = [
   {
     firstName: 'Rob',
     lastName: 'Morrison',
-    constituency: 'Kootenay—Columbia',
+    constituency: 'Kootenay-Columbia',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1538,7 +1556,7 @@ export const politicians = [
   {
     firstName: 'Glen',
     lastName: 'Motz',
-    constituency: 'Medicine Hat—Cardston—Warner',
+    constituency: 'Medicine Hat-Cardston-Warner',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1546,7 +1564,7 @@ export const politicians = [
   {
     firstName: 'Dan',
     lastName: 'Muys',
-    constituency: 'Flamborough—Glanbrook',
+    constituency: 'Flamborough-Glanbrook',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1562,7 +1580,7 @@ export const politicians = [
   {
     firstName: 'John',
     lastName: 'Nater',
-    constituency: 'Perth—Wellington',
+    constituency: 'Perth-Wellington',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1586,7 +1604,7 @@ export const politicians = [
   {
     firstName: 'Jennifer',
     lastName: "O'Connell",
-    constituency: 'Pickering—Uxbridge',
+    constituency: 'Pickering-Uxbridge',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1594,7 +1612,7 @@ export const politicians = [
   {
     firstName: 'Jeremy',
     lastName: 'Patzer',
-    constituency: 'Cypress Hills—Grasslands',
+    constituency: 'Cypress Hills-Grasslands',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1602,7 +1620,7 @@ export const politicians = [
   {
     firstName: 'Pierre',
     lastName: 'Paul-Hus',
-    constituency: 'Charlesbourg—Haute-Saint-Charles',
+    constituency: 'Charlesbourg-Haute-Saint-Charles',
     province: 'Quebec',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1618,7 +1636,7 @@ export const politicians = [
   {
     firstName: 'Rick',
     lastName: 'Perkins',
-    constituency: 'South Shore—St. Margarets',
+    constituency: 'South Shore-St. Margarets',
     province: 'Nova Scotia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1626,7 +1644,7 @@ export const politicians = [
   {
     firstName: 'Yves',
     lastName: 'Perron',
-    constituency: 'Berthier—Maskinongé',
+    constituency: 'Berthier-Maskinongé',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1634,7 +1652,7 @@ export const politicians = [
   {
     firstName: 'Louis',
     lastName: 'Plamondon',
-    constituency: 'Bécancour—Nicolet—Saurel',
+    constituency: 'Bécancour-Nicolet-Saurel',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1642,7 +1660,7 @@ export const politicians = [
   {
     firstName: 'Marcus',
     lastName: 'Powlowski',
-    constituency: 'Thunder Bay—Rainy River',
+    constituency: 'Thunder Bay-Rainy River',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1650,7 +1668,7 @@ export const politicians = [
   {
     firstName: 'Alain',
     lastName: 'Rayes',
-    constituency: 'Richmond—Arthabaska',
+    constituency: 'Richmond-Arthabaska',
     province: 'Quebec',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1666,7 +1684,7 @@ export const politicians = [
   {
     firstName: 'Scott',
     lastName: 'Reid',
-    constituency: 'Lanark—Frontenac—Kingston',
+    constituency: 'Lanark-Frontenac-Kingston',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1674,7 +1692,7 @@ export const politicians = [
   {
     firstName: 'Blake',
     lastName: 'Richards',
-    constituency: 'Banff—Airdrie',
+    constituency: 'Banff-Airdrie',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1682,7 +1700,7 @@ export const politicians = [
   {
     firstName: 'Anna',
     lastName: 'Roberts',
-    constituency: 'King—Vaughan',
+    constituency: 'King-Vaughan',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1698,7 +1716,7 @@ export const politicians = [
   {
     firstName: 'Churence',
     lastName: 'Rogers',
-    constituency: 'Bonavista—Burin—Trinity',
+    constituency: 'Bonavista-Burin-Trinity',
     province: 'Newfoundland and Labrador',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1706,7 +1724,7 @@ export const politicians = [
   {
     firstName: 'Sherry',
     lastName: 'Romanado',
-    constituency: 'Longueuil—Charles-LeMoyne',
+    constituency: 'Longueuil-Charles-LeMoyne',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1714,7 +1732,7 @@ export const politicians = [
   {
     firstName: 'Lianne',
     lastName: 'Rood',
-    constituency: 'Lambton—Kent—Middlesex',
+    constituency: 'Lambton-Kent-Middlesex',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1722,7 +1740,7 @@ export const politicians = [
   {
     firstName: 'Alex',
     lastName: 'Ruff',
-    constituency: 'Bruce—Grey—Owen Sound',
+    constituency: 'Bruce-Grey-Owen Sound',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1746,7 +1764,7 @@ export const politicians = [
   {
     firstName: 'Darrell',
     lastName: 'Samson',
-    constituency: 'Sackville—Preston—Chezzetcook',
+    constituency: 'Sackville-Preston-Chezzetcook',
     province: 'Nova Scotia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1762,7 +1780,7 @@ export const politicians = [
   {
     firstName: 'Simon-Pierre',
     lastName: 'Savard-Tremblay',
-    constituency: 'Saint-Hyacinthe—Bagot',
+    constituency: 'Saint-Hyacinthe-Bagot',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1778,7 +1796,7 @@ export const politicians = [
   {
     firstName: 'Peter',
     lastName: 'Schiefke',
-    constituency: 'Vaudreuil—Soulanges',
+    constituency: 'Vaudreuil-Soulanges',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1786,7 +1804,7 @@ export const politicians = [
   {
     firstName: 'Jamie',
     lastName: 'Schmale',
-    constituency: 'Haliburton—Kawartha Lakes—Brock',
+    constituency: 'Haliburton-Kawartha Lakes-Brock',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1794,7 +1812,7 @@ export const politicians = [
   {
     firstName: 'Kyle',
     lastName: 'Seeback',
-    constituency: 'Dufferin—Caledon',
+    constituency: 'Dufferin-Caledon',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1810,7 +1828,7 @@ export const politicians = [
   {
     firstName: 'Brenda',
     lastName: 'Shanahan',
-    constituency: 'Châteauguay—Lacolle',
+    constituency: 'Châteauguay-Lacolle',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1834,7 +1852,7 @@ export const politicians = [
   {
     firstName: 'Doug',
     lastName: 'Shipley',
-    constituency: 'Barrie—Springwater—Oro-Medonte',
+    constituency: 'Barrie-Springwater-Oro-Medonte',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1882,7 +1900,7 @@ export const politicians = [
   {
     firstName: 'Clifford',
     lastName: 'Small',
-    constituency: 'Coast of Bays—Central—Notre Dame',
+    constituency: 'Coast of Bays-Central-Notre Dame',
     province: 'Newfoundland and Labrador',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1890,7 +1908,7 @@ export const politicians = [
   {
     firstName: 'Francesco',
     lastName: 'Sorbara',
-    constituency: 'Vaughan—Woodbridge',
+    constituency: 'Vaughan-Woodbridge',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1906,7 +1924,7 @@ export const politicians = [
   {
     firstName: 'Sven',
     lastName: 'Spengemann',
-    constituency: 'Mississauga—Lakeshore',
+    constituency: 'Mississauga-Lakeshore',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1914,7 +1932,7 @@ export const politicians = [
   {
     firstName: 'Warren',
     lastName: 'Steinley',
-    constituency: 'Regina—Lewvan',
+    constituency: 'Regina-Lewvan',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1930,7 +1948,7 @@ export const politicians = [
   {
     firstName: 'Jake',
     lastName: 'Stewart',
-    constituency: 'Miramichi—Grand Lake',
+    constituency: 'Miramichi-Grand Lake',
     province: 'New Brunswick',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1938,7 +1956,7 @@ export const politicians = [
   {
     firstName: 'Mark',
     lastName: 'Strahl',
-    constituency: 'Chilliwack—Hope',
+    constituency: 'Chilliwack-Hope',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1954,7 +1972,7 @@ export const politicians = [
   {
     firstName: 'Jenna',
     lastName: 'Sudds',
-    constituency: 'Kanata—Carleton',
+    constituency: 'Kanata-Carleton',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -1962,7 +1980,7 @@ export const politicians = [
   {
     firstName: 'Leah',
     lastName: 'Taylor Roy',
-    constituency: 'Aurora—Oak Ridges—Richmond Hill',
+    constituency: 'Aurora-Oak Ridges-Richmond Hill',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2002,7 +2020,7 @@ export const politicians = [
   {
     firstName: 'Corey',
     lastName: 'Tochor',
-    constituency: 'Saskatoon—University',
+    constituency: 'Saskatoon-University',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2010,7 +2028,7 @@ export const politicians = [
   {
     firstName: 'Fraser',
     lastName: 'Tolmie',
-    constituency: 'Moose Jaw—Lake Centre—Lanigan',
+    constituency: 'Moose Jaw-Lake Centre-Lanigan',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2018,7 +2036,7 @@ export const politicians = [
   {
     firstName: 'Denis',
     lastName: 'Trudel',
-    constituency: 'Longueuil—Saint-Hubert',
+    constituency: 'Longueuil-Saint-Hubert',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2034,7 +2052,7 @@ export const politicians = [
   {
     firstName: 'Rechie',
     lastName: 'Valdez',
-    constituency: 'Mississauga—Streetsville',
+    constituency: 'Mississauga-Streetsville',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2042,7 +2060,7 @@ export const politicians = [
   {
     firstName: 'Tony',
     lastName: 'Van Bynen',
-    constituency: 'Newmarket—Aurora',
+    constituency: 'Newmarket-Aurora',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2058,7 +2076,7 @@ export const politicians = [
   {
     firstName: 'Tako',
     lastName: 'Van Popta',
-    constituency: 'Langley—Aldergrove',
+    constituency: 'Langley-Aldergrove',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2066,7 +2084,7 @@ export const politicians = [
   {
     firstName: 'Anita',
     lastName: 'Vandenbeld',
-    constituency: 'Ottawa West—Nepean',
+    constituency: 'Ottawa West-Nepean',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2074,7 +2092,7 @@ export const politicians = [
   {
     firstName: 'Karen',
     lastName: 'Vecchio',
-    constituency: 'Elgin—Middlesex—London',
+    constituency: 'Elgin-Middlesex-London',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2082,7 +2100,7 @@ export const politicians = [
   {
     firstName: 'Gary',
     lastName: 'Vidal',
-    constituency: 'Desnethé—Missinippi—Churchill River',
+    constituency: 'Desnethé-Missinippi-Churchill River',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2090,7 +2108,7 @@ export const politicians = [
   {
     firstName: 'Dominique',
     lastName: 'Vien',
-    constituency: 'Bellechasse—Les Etchemins—Lévis',
+    constituency: 'Bellechasse-Les Etchemins-Lévis',
     province: 'Quebec',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2098,7 +2116,7 @@ export const politicians = [
   {
     firstName: 'Arnold',
     lastName: 'Viersen',
-    constituency: 'Peace River—Westlock',
+    constituency: 'Peace River-Westlock',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2106,7 +2124,7 @@ export const politicians = [
   {
     firstName: 'Julie',
     lastName: 'Vignola',
-    constituency: 'Beauport—Limoilou',
+    constituency: 'Beauport-Limoilou',
     province: 'Quebec',
     affiliation: 'Bloc Québécois',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2122,7 +2140,7 @@ export const politicians = [
   {
     firstName: 'Arif',
     lastName: 'Virani',
-    constituency: 'Parkdale—High Park',
+    constituency: 'Parkdale-High Park',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2130,7 +2148,7 @@ export const politicians = [
   {
     firstName: 'Brad',
     lastName: 'Vis',
-    constituency: 'Mission—Matsqui—Fraser Canyon',
+    constituency: 'Mission-Matsqui-Fraser Canyon',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2138,7 +2156,7 @@ export const politicians = [
   {
     firstName: 'Kevin',
     lastName: 'Vuong',
-    constituency: 'Spadina—Fort York',
+    constituency: 'Spadina-Fort York',
     province: 'Ontario',
     affiliation: 'Independent',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2146,7 +2164,7 @@ export const politicians = [
   {
     firstName: 'Cathay',
     lastName: 'Wagantall',
-    constituency: 'Yorkton—Melville',
+    constituency: 'Yorkton-Melville',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2154,7 +2172,7 @@ export const politicians = [
   {
     firstName: 'Chris',
     lastName: 'Warkentin',
-    constituency: 'Grande Prairie—Mackenzie',
+    constituency: 'Grande Prairie-Mackenzie',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2162,7 +2180,7 @@ export const politicians = [
   {
     firstName: 'Kevin',
     lastName: 'Waugh',
-    constituency: 'Saskatoon—Grasswood',
+    constituency: 'Saskatoon-Grasswood',
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2178,7 +2196,7 @@ export const politicians = [
   {
     firstName: 'Patrick',
     lastName: 'Weiler',
-    constituency: 'West Vancouver—Sunshine Coast—Sea to Sky Country',
+    constituency: 'West Vancouver-Sunshine Coast-Sea to Sky Country',
     province: 'British Columbia',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2202,7 +2220,7 @@ export const politicians = [
   {
     firstName: 'Jean',
     lastName: 'Yip',
-    constituency: 'Scarborough—Agincourt',
+    constituency: 'Scarborough-Agincourt',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2218,7 +2236,7 @@ export const politicians = [
   {
     firstName: 'Bonita',
     lastName: 'Zarrillo',
-    constituency: 'Port Moody—Coquitlam',
+    constituency: 'Port Moody-Coquitlam',
     province: 'British Columbia',
     affiliation: 'NDP',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2226,7 +2244,7 @@ export const politicians = [
   {
     firstName: 'Bob',
     lastName: 'Zimmer',
-    constituency: 'Prince George—Peace River—Northern Rockies',
+    constituency: 'Prince George-Peace River-Northern Rockies',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2234,7 +2252,7 @@ export const politicians = [
   {
     firstName: 'Sameer',
     lastName: 'Zuberi',
-    constituency: 'Pierrefonds—Dollard',
+    constituency: 'Pierrefonds-Dollard',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2258,7 +2276,7 @@ export const politicians = [
   {
     firstName: 'Carolyn',
     lastName: 'Bennett',
-    constituency: "Toronto—St. Paul's",
+    constituency: "Toronto-St. Paul's",
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2266,7 +2284,7 @@ export const politicians = [
   {
     firstName: 'Candice',
     lastName: 'Bergen',
-    constituency: 'Portage—Lisgar',
+    constituency: 'Portage-Lisgar',
     province: 'Manitoba',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2274,7 +2292,7 @@ export const politicians = [
   {
     firstName: 'Marie-Claude',
     lastName: 'Bibeau',
-    constituency: 'Compton—Stanstead',
+    constituency: 'Compton-Stanstead',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2314,7 +2332,7 @@ export const politicians = [
   {
     firstName: 'François-Philippe',
     lastName: 'Champagne',
-    constituency: 'Saint-Maurice—Champlain',
+    constituency: 'Saint-Maurice-Champlain',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2322,7 +2340,7 @@ export const politicians = [
   {
     firstName: 'Michael D.',
     lastName: 'Chong',
-    constituency: 'Wellington—Halton Hills',
+    constituency: 'Wellington-Halton Hills',
     province: 'Ontario',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2354,7 +2372,7 @@ export const politicians = [
   {
     firstName: 'Greg',
     lastName: 'Fergus',
-    constituency: 'Hull—Aylmer',
+    constituency: 'Hull-Aylmer',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2362,7 +2380,7 @@ export const politicians = [
   {
     firstName: 'Kerry-Lynne',
     lastName: 'Findlay',
-    constituency: 'South Surrey—White Rock',
+    constituency: 'South Surrey-White Rock',
     province: 'British Columbia',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2370,7 +2388,7 @@ export const politicians = [
   {
     firstName: 'Mona',
     lastName: 'Fortier',
-    constituency: 'Ottawa—Vanier',
+    constituency: 'Ottawa-Vanier',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2386,7 +2404,7 @@ export const politicians = [
   {
     firstName: 'Chrystia',
     lastName: 'Freeland',
-    constituency: 'University—Rosedale',
+    constituency: 'University-Rosedale',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2402,7 +2420,7 @@ export const politicians = [
   {
     firstName: 'Marc',
     lastName: 'Garneau',
-    constituency: 'Notre-Dame-de-Grâce—Westmount',
+    constituency: 'Notre-Dame-de-Grâce-Westmount',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2418,7 +2436,7 @@ export const politicians = [
   {
     firstName: 'Steven',
     lastName: 'Guilbeault',
-    constituency: 'Laurier—Sainte-Marie',
+    constituency: 'Laurier-Sainte-Marie',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2426,7 +2444,7 @@ export const politicians = [
   {
     firstName: 'Patty',
     lastName: 'Hajdu',
-    constituency: 'Thunder Bay—Superior North',
+    constituency: 'Thunder Bay-Superior North',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2442,7 +2460,7 @@ export const politicians = [
   {
     firstName: 'Ahmed',
     lastName: 'Hussen',
-    constituency: 'York South—Weston',
+    constituency: 'York South-Weston',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2466,7 +2484,7 @@ export const politicians = [
   {
     firstName: 'Helena',
     lastName: 'Jaczek',
-    constituency: 'Markham—Stouffville',
+    constituency: 'Markham-Stouffville',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2490,7 +2508,7 @@ export const politicians = [
   {
     firstName: 'Mike',
     lastName: 'Lake',
-    constituency: 'Edmonton—Wetaskiwin',
+    constituency: 'Edmonton-Wetaskiwin',
     province: 'Alberta',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2498,7 +2516,7 @@ export const politicians = [
   {
     firstName: 'David',
     lastName: 'Lametti',
-    constituency: 'LaSalle—Émard—Verdun',
+    constituency: 'LaSalle-Émard-Verdun',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2514,7 +2532,7 @@ export const politicians = [
   {
     firstName: 'Diane',
     lastName: 'Lebouthillier',
-    constituency: 'Gaspésie—Les Îles-de-la-Madeleine',
+    constituency: 'Gaspésie-Les Îles-de-la-Madeleine',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2546,7 +2564,7 @@ export const politicians = [
   {
     firstName: 'John',
     lastName: 'McKay',
-    constituency: 'Scarborough—Guildwood',
+    constituency: 'Scarborough-Guildwood',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2554,7 +2572,7 @@ export const politicians = [
   {
     firstName: 'Marco',
     lastName: 'Mendicino',
-    constituency: 'Eglinton—Lawrence',
+    constituency: 'Eglinton-Lawrence',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2562,7 +2580,7 @@ export const politicians = [
   {
     firstName: 'Marc',
     lastName: 'Miller',
-    constituency: 'Ville-Marie—Le Sud-Ouest—Île-des-Soeurs',
+    constituency: 'Ville-Marie-Le Sud-Ouest-Île-des-Soeurs',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2586,7 +2604,7 @@ export const politicians = [
   {
     firstName: 'Mary',
     lastName: 'Ng',
-    constituency: 'Markham—Thornhill',
+    constituency: 'Markham-Thornhill',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2602,7 +2620,7 @@ export const politicians = [
   {
     firstName: 'Seamus',
     lastName: "O'Regan",
-    constituency: "St. John's South—Mount Pearl",
+    constituency: "St. John's South-Mount Pearl",
     province: 'Newfoundland and Labrador',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2618,7 +2636,7 @@ export const politicians = [
   {
     firstName: 'Ginette',
     lastName: 'Petitpas Taylor',
-    constituency: 'Moncton—Riverview—Dieppe',
+    constituency: 'Moncton-Riverview-Dieppe',
     province: 'New Brunswick',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2658,7 +2676,7 @@ export const politicians = [
   {
     firstName: 'Anthony',
     lastName: 'Rota',
-    constituency: 'Nipissing—Timiskaming',
+    constituency: 'Nipissing-Timiskaming',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2674,7 +2692,7 @@ export const politicians = [
   {
     firstName: 'Andrew',
     lastName: 'Scheer',
-    constituency: "Regina—Qu'Appelle",
+    constituency: "Regina-Qu'Appelle",
     province: 'Saskatchewan',
     affiliation: 'Conservative',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2682,7 +2700,7 @@ export const politicians = [
   {
     firstName: 'Judy A.',
     lastName: 'Sgro',
-    constituency: 'Humber River—Black Creek',
+    constituency: 'Humber River-Black Creek',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2690,7 +2708,7 @@ export const politicians = [
   {
     firstName: 'Pascale',
     lastName: 'St-Onge',
-    constituency: 'Brome—Missisquoi',
+    constituency: 'Brome-Missisquoi',
     province: 'Quebec',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2698,7 +2716,7 @@ export const politicians = [
   {
     firstName: 'Filomena',
     lastName: 'Tassi',
-    constituency: 'Hamilton West—Ancaster—Dundas',
+    constituency: 'Hamilton West-Ancaster-Dundas',
     province: 'Ontario',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2714,7 +2732,7 @@ export const politicians = [
   {
     firstName: 'Dan',
     lastName: 'Vandal',
-    constituency: 'Saint Boniface—Saint Vital',
+    constituency: 'Saint Boniface-Saint Vital',
     province: 'Manitoba',
     affiliation: 'Liberal',
     startDate: '2021-09-20 12:00:00 AM',
@@ -2737,13 +2755,14 @@ export const politicians = [
   },
 ];
 
+export const orderedPoliticians = () =>
+  politicians.sort((a, b) => {
+    const textA = a.firstName.toUpperCase();
+    const textB = b.firstName.toUpperCase();
+    return textA < textB ? -1 : textA > textB ? 1 : 0;
+  });
+
 export const politiciansByProvinceCode = (code) => {
   const p = provincesByCode[code];
-  return politicians
-    .filter(({ province }) => province === p)
-    .sort((a, b) => {
-      const textA = a.firstName.toUpperCase();
-      const textB = b.firstName.toUpperCase();
-      return textA < textB ? -1 : textA > textB ? 1 : 0;
-    });
+  return orderedPoliticians().filter(({ province }) => province === p);
 };
