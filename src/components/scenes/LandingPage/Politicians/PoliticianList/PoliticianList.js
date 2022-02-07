@@ -6,10 +6,10 @@ import {
   orderedPoliticians,
   politiciansByProvinceCode,
 } from '../../../../../data/politicians';
-import './PoliticianList.scss';
+import styles from './PoliticianList.module.scss';
 
 export const PoliticianList = ({ className, province: initialProvince }) => {
-  const classNames = classnames('politician-list', className);
+  const classNames = classnames(styles.politicianList, className);
 
   const [province, setProvince] = useState(initialProvince);
   const [politicians, setPoliticians] = useState(orderedPoliticians());
@@ -29,14 +29,29 @@ export const PoliticianList = ({ className, province: initialProvince }) => {
   return (
     <div className={classNames}>
       {politicians.map(
-        ({ affiliation, constituency, firstName, lastName, province }, i) => (
+        (
+          {
+            affiliation,
+            constituency,
+            faxNumber,
+            firstName,
+            lastName,
+            phoneNumber,
+            province: p,
+            twitter,
+          },
+          i
+        ) => (
           <PoliticianListItem
             affiliation={affiliation}
             constituency={constituency}
+            faxNumber={faxNumber}
             firstName={firstName}
             key={`politician-${i}`}
             lastName={lastName}
-            province={province}
+            phoneNumber={phoneNumber}
+            province={p}
+            twitter={twitter}
           />
         )
       )}

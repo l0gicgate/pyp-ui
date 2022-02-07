@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import './Logo.scss';
+import styles from './Logo.module.scss';
 
 export const Logo = ({ className, size }) => {
-  const classNames = classnames('logo', className);
+  const classNames = classnames(styles.logo, className);
   const width = (768.3 / 196.9) * size;
   const textColor = '#FFF';
   return (

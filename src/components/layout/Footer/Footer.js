@@ -1,22 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import './Footer.scss';
+import styles from './Footer.module.scss';
 
-export const Footer = ({ className }) => {
-  const classNames = classnames(className);
+export const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className={classNames}>
+    <footer className={styles.footer}>
       &copy; 2021-{year} Pressure Your Politicians
     </footer>
   );
-};
-
-Footer.propTypes = {
-  className: PropTypes.string,
-};
-
-Footer.defaultProps = {
-  className: null,
 };

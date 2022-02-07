@@ -1,4 +1,4 @@
-.politician-list-item {
+.politicianListItem {
   border-bottom: 1px solid #EEE;
   display: flex;
   flex-direction: row;
@@ -13,7 +13,7 @@
       height: 180px;
     }
 
-    .left__party-label {
+    .left__partyLabel {
       bottom: 0;
       left: 0;
       position: absolute;
@@ -42,8 +42,10 @@
     .right__contact {
       .contact__item {
         align-items: center;
+        color: #000;
         display: flex;
         margin-bottom: 8px;
+        text-decoration: none;
 
         .item__icon {
           margin-right: 8px;

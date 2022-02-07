@@ -35,13 +35,17 @@
       }
     }
 
-    .canada-map {
+    .left__map {
       cursor: pointer;
       max-height: 480px;
       padding-top: 60px;
 
       & *, & > * {
         cursor: pointer;
+      }
+
+      svg {
+        max-height: 480px;
       }
     }
   }
@@ -71,7 +75,7 @@
       }
     }
 
-    .right__politician-list {
+    .right__politicians {
       height: calc(100% - 96px);
       overflow-y: auto;
     }

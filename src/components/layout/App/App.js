@@ -1,21 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import Head from 'next/head';
 import { Footer } from '../Footer';
-import './App.scss';
+import styles from './App.module.scss';
 
-export const App = ({ children }) => {
-  const classNames = classnames('app');
-return (
+export const App = ({ children }) => (
   <>
     <Head>
       <meta
-        name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5"
+        name="viewport"
       />
-      <link rel="icon" href={`/images/favicon.ico`} />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="/images/favicon.ico" rel="icon" />
+      <link href="https://fonts.gstatic.com" rel="preconnect" />
       <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
         rel="stylesheet"
@@ -25,13 +22,12 @@ return (
         rel="stylesheet"
       />
     </Head>
-    <div className={classNames}>
+    <div className={styles.app}>
       {children}
       <Footer />
     </div>
   </>
 );
-};
 
 App.propTypes = {
   children: PropTypes.node.isRequired,

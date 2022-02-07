@@ -2,24 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Logo } from '../../../ui';
-import './Hero.scss';
+import styles from './Hero.module.scss';
 
 export const Hero = ({ className, onClick }) => {
-  const classNames = classnames('hero', className);
+  const classNames = classnames(styles.hero, className);
   return (
     <section className={classNames}>
       <header>
         <Logo />
       </header>
-      <div className="hero__inner">
-        <div className="inner__left">
+      <div className={styles.hero__inner}>
+        <div className={styles.inner__left}>
           <h1>
             Politicians work for us. It is our duty as citizen to keep them
             accountable.
           </h1>
           <button onClick={onClick}>Take Action Now!</button>
         </div>
-        <div className="inner__right">
+        <div className={styles.inner__right}>
           <img
             alt="Political Stage Illustration"
             className="hero__illustration"

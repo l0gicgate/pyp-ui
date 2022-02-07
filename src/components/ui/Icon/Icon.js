@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import './Icon.scss';
+import styles from './Icon.module.scss';
 
 export const Icon = ({ children, className, color, outlined, size, type }) => {
   const classNames = classnames(
-    'icon',
-    { 'icon--outlined': outlined },
+    styles.icon,
+    { [styles.iconOutlined]: outlined },
     className
   );
   return (
