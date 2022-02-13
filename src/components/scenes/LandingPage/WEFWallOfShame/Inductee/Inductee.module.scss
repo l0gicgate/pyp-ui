@@ -1,0 +1,27 @@
+.inductee {
+  width: 197px;
+
+  &__photo {
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      height: 320px;
+    }
+
+    .photo__partyLabel {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+  }
+}
