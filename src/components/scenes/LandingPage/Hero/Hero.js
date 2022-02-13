@@ -8,13 +8,13 @@ export const Hero = ({ className, onClick }) => {
   const classNames = classnames(styles.hero, className);
   return (
     <section className={classNames}>
-      <header>
+      <header className={styles.hero__header}>
         <Logo />
       </header>
       <div className={styles.hero__inner}>
         <div className={styles.inner__left}>
           <h1>
-            Politicians work for us. It is our duty as citizen to keep them
+            Politicians work for us. It is our duty as citizens to keep them
             accountable.
           </h1>
           <button onClick={onClick}>Take Action Now!</button>

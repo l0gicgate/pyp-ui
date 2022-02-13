@@ -2,6 +2,7 @@ import React, { forwardRef, useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
 import dynamic from 'next/dynamic';
 import classnames from 'classnames';
+import debounce from 'lodash.debounce';
 import { Icon } from '../../../ui';
 import { PoliticianList } from './PoliticianList';
 import styles from './Politicians.module.scss';
@@ -12,9 +13,21 @@ export const Politicians = forwardRef(({ className }, ref) => {
   const classNames = classnames(styles.politicians, className);
 
   const [selectedProvince, setSelectedProvince] = useState(null);
+  const [searchQuery, setSearchQuery] = useState(null);
 
   const handleClickMap = useCallback(
     (nextSelectedProvince) => setSelectedProvince(nextSelectedProvince),
+    []
+  );
+
+  const handleSearchInputChange = useCallback(
+    debounce(
+      (e) => {
+        const nextValue = e.target.value.trim();
+        setSearchQuery(nextValue || null);
+      },
+      { maxWait: 300 }
+    ),
     []
   );
 
@@ -25,7 +38,7 @@ export const Politicians = forwardRef(({ className }, ref) => {
   return (
     <section className={classNames} ref={ref}>
       <div className={styles.politicians__left}>
-        <h2>Select a Province</h2>
+        <h2>Find your representative</h2>
         <div className={styles.left__map}>
           <CanadaMap
             customize={customMapStyle}
@@ -37,10 +50,17 @@ export const Politicians = forwardRef(({ className }, ref) => {
       <div className={styles.politicians__right}>
         <div className={styles.right__search}>
           <Icon size={32} type="search" />
-          <input placeholder="Search by name..." type="text" />
+          <input
+            onChange={handleSearchInputChange}
+            placeholder="Search by name, region or affiliation..."
+            type="text"
+          />
         </div>
         <div className={styles.right__politicians}>
-          <PoliticianList province={selectedProvince} />
+          <PoliticianList
+            province={selectedProvince}
+            searchQuery={searchQuery}
+          />
         </div>
       </div>
     </section>

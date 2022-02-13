@@ -8,7 +8,11 @@ import {
 } from '../../../../../data/politicians';
 import styles from './PoliticianList.module.scss';
 
-export const PoliticianList = ({ className, province: initialProvince }) => {
+export const PoliticianList = ({
+  className,
+  province: initialProvince,
+  searchQuery,
+}) => {
   const classNames = classnames(styles.politicianList, className);
 
   const [province, setProvince] = useState(initialProvince);
@@ -21,10 +25,10 @@ export const PoliticianList = ({ className, province: initialProvince }) => {
   useEffect(() => {
     const nextPoliticians =
       province !== null
-        ? politiciansByProvinceCode(province)
-        : orderedPoliticians();
+        ? politiciansByProvinceCode(province, searchQuery)
+        : orderedPoliticians(searchQuery);
     setPoliticians(nextPoliticians);
-  }, [province]);
+  }, [province, searchQuery]);
 
   return (
     <div className={classNames}>
@@ -33,6 +37,7 @@ export const PoliticianList = ({ className, province: initialProvince }) => {
           {
             affiliation,
             constituency,
+            email,
             faxNumber,
             firstName,
             lastName,
@@ -45,6 +50,7 @@ export const PoliticianList = ({ className, province: initialProvince }) => {
           <PoliticianListItem
             affiliation={affiliation}
             constituency={constituency}
+            email={email}
             faxNumber={faxNumber}
             firstName={firstName}
             key={`politician-${i}`}
@@ -62,9 +68,11 @@ export const PoliticianList = ({ className, province: initialProvince }) => {
 PoliticianList.propTypes = {
   className: PropTypes.string,
   province: PropTypes.string,
+  searchQuery: PropTypes.string,
 };
 
 PoliticianList.defaultProps = {
   className: null,
   province: null,
+  searchQuery: null,
 };

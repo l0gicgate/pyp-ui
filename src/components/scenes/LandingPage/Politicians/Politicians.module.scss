@@ -1,15 +1,32 @@
+@import '../../../../styles/shared';
+
 .politicians {
   border-bottom: 1px solid #EEE;
   display: flex;
   flex-direction: row;
+  min-height: 780px;
   max-height: 780px;
+
+  @include respond-below(lg) {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+    max-height: unset;
+  }
 
   .politicians__left {
     align-items: center;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     padding: 40px 80px 0;
     width: 50%;
+
+    @include respond-below(lg) {
+      padding-bottom: 40px;
+      width: 100%;
+    }
 
     h2 {
       color: #000;
@@ -22,7 +39,7 @@
       width: 100%;
 
       &:after {
-        background: #E5322D;
+        background: #8B77E8;
         border-radius: 4px;
         bottom: 0;
         clear: both;
@@ -40,6 +57,10 @@
       max-height: 480px;
       padding-top: 60px;
 
+      @include respond-below(lg) {
+        display: none;
+      }
+
       & *, & > * {
         cursor: pointer;
       }
@@ -53,6 +74,11 @@
   .politicians__right {
     border-left: 1px solid #EEE;
     width: 50%;
+
+    @include respond-below(lg) {
+      border-top: 1px solid #EEE;
+      width: 100%;
+    }
 
     .right__search {
       align-items: center;
@@ -78,6 +104,10 @@
     .right__politicians {
       height: calc(100% - 96px);
       overflow-y: auto;
+
+      @include respond-below(lg) {
+        height: 480px;
+      }
     }
   }
 }

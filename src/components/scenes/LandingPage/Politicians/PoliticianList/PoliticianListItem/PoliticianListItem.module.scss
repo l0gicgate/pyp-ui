@@ -8,6 +8,7 @@
     border-radius: 4px;
     overflow: hidden;
     position: relative;
+    width: 111px;
 
     img {
       height: 180px;
@@ -22,6 +23,7 @@
 
   &__right {
     padding: 15px 30px 15px;
+    width: calc(100% - 161px);
 
     .right__meta {
       margin-bottom: 15px;

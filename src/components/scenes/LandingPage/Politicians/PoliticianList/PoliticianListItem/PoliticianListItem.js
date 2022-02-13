@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { PartyLabel } from './PartyLabel';
 import { Icon } from '../../../../../ui';
+import { politicianImageUrl } from '../../../../../../data/politicians';
 import styles from './PoliticianListItem.module.scss';
 
 export const PoliticianListItem = ({
@@ -19,19 +20,7 @@ export const PoliticianListItem = ({
 }) => {
   const classNames = classnames(styles.politicianListItem, className);
   const fullName = `${firstName} ${lastName}`;
-
-  const imgUriLastNameFragment = lastName
-    .replace(' ', '')
-    .replace("'", '')
-    .replace('.', '');
-
-  const imgUriFirstNameFragment = firstName
-    .replace(' ', '')
-    .replace("'", '')
-    .replace('.', '');
-
-  const imgUri = `${imgUriLastNameFragment}${imgUriFirstNameFragment}`;
-  const photoUrl = `/images/parliamanterians/${imgUri}.jpg`;
+  const photoUrl = politicianImageUrl(firstName, lastName);
 
   return (
     <div className={classNames}>
@@ -108,7 +97,7 @@ PoliticianListItem.propTypes = {
   affiliation: PropTypes.string.isRequired,
   className: PropTypes.string,
   constituency: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
+  email: PropTypes.string,
   faxNumber: PropTypes.string,
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
@@ -119,6 +108,7 @@ PoliticianListItem.propTypes = {
 
 PoliticianListItem.defaultProps = {
   className: null,
+  email: null,
   faxNumber: null,
   phoneNumber: null,
   twitter: null,

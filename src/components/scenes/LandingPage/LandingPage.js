@@ -2,6 +2,7 @@ import React, { useCallback, useRef } from 'react';
 import scrollTo from 'scroll-to';
 import { Hero } from './Hero';
 import { Politicians } from './Politicians';
+import { WEFWallOfShame } from './WEFWallOfShame';
 
 export const LandingPage = () => {
   const selectYourProvinceRef = useRef();
@@ -9,8 +10,8 @@ export const LandingPage = () => {
   const handleClickHero = useCallback(() => {
     const scrollTop = selectYourProvinceRef.current.getBoundingClientRect().top;
     scrollTo(0, scrollTop, {
-      ease: 'out-expo',
       duration: 1000,
+      ease: 'out-expo',
     });
   }, []);
 
@@ -18,6 +19,7 @@ export const LandingPage = () => {
     <>
       <Hero onClick={handleClickHero} />
       <Politicians ref={selectYourProvinceRef} />
+      <WEFWallOfShame />
     </>
   );
 };
